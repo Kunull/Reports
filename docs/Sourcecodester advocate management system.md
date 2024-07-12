@@ -2,7 +2,7 @@ Related Code file: /control/adds.php
 
 Injection parameter: MULTIPART name
 
-POST parameter 'MULTIPART name' is vulnerable.
+POST parameter 'MULTIPART name' is vulnerable to time-based Blind SQLi.
 
 ## Demonstration
 
