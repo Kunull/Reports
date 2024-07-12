@@ -1,7 +1,7 @@
-```
+---
 slug: sourcecodester-advocate-management-system-add-act
 title: Sourcecodester advocate management system (add_act) .md
-```
+---
 
 http://localhost/kortex_lite/kortex_lite/control/add_act.php
 
