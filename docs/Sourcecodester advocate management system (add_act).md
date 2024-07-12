@@ -1,5 +1,5 @@
 ```
-slug: sourcecodester-advocate-management-system-add_act
+slug: sourcecodester-advocate-management-system-add-act
 title: Sourcecodester advocate management system (add_act) .md
 ```
 
