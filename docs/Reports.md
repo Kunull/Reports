@@ -10,7 +10,7 @@ pagination_prev: null
 Includes reports concerning bug bounty and CVE research.
 
 :::note
-All findings are resposibly disclosed to concerning bodies. If you have any queries, send me an [email](mailto:llunuk@protonmail.com.com).
+All findings are responsibly disclosed to concerning bodies. If you have any queries, send me an [email](mailto:llunuk@protonmail.com.com).
 :::
 
 ## Disclosure accounts
