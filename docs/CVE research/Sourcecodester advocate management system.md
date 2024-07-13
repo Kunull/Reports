@@ -1,4 +1,5 @@
 ---
+slug: sourcecodester-advocate-management-system-adds
 title: Sourcecodester Kortex advocate management system (adds.php)
 ---
 
