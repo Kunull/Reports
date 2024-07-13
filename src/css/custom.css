@@ -1,11 +1,36 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
  */
 
-/* You can override the default Infima variables here. */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/font/Jetbrains Mono/ttf/JetBrainsMono-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Input Sans';
+  src: url('/font/InputSans/InputSans/InputSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'VCR OSD Mono';
+  src: url('/font/VCR OSD Mono/VCROSDMono.ttf') format("truetype");
+}
+
 :root {
+  --ifm-navbar-height: 4rem;
+  --ifm-toc-padding-horizontal: 0.5rem;
+  --ifm-toc-padding-vertical: 0.8rem;
+  --ifm-menu-link-padding-horizontal: 0.6rem;
+  --ifm-menu-link-padding-vertical: 0.5rem;
+/*   --ifm-font-family-base: 'Input Sans';
+  --ifm-font-family-monospace: 'JetBrains Mono'; */
+  --ifm-global-radius: 0.25rem;
+  --ifm-code-border-radius: var(--ifm-global-radius);
+  --ifm-font-weight-light: 300;
+  --ifm-font-weight-normal: 400;
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-bold: 700;
   --ifm-color-emphasis-200: #ccc;
   --ifm-menu-color-background-active: #dadada;
   --ifm-menu-color-background-hover: #dadada;
@@ -22,7 +47,8 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-breadcrumb-border-radius: 0.25rem;
-  --ifm-spacing-horizontal: 2rem;
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-dropdown-font-weight: var(--ifm-font-weight-normal);
 }
 
 html[data-theme='light'] .alert--info {
@@ -32,20 +58,16 @@ html[data-theme='light'] .alert--info {
   --ifm-alert-border-color: var(--ifm-color-emphasis-200);
 }
 
-html[data-theme='light'] .navbar .navbar__logo {
-  content: url(/static/img/play_inverted.png)
-}
-
 
 
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-table-head-background: #222;
-  --ifm-menu-color-background-active: #222;
-  --ifm-menu-color-background-hover: #222;
+  --ifm-table-head-background: rgb(20,20,20);
+  --ifm-menu-color-background-active: rgb(20,20,20);
+  --ifm-menu-color-background-hover: rgb(20,20,20);
   --ifm-breadcrumb-item-background-active: #222;
-  --ifm-navbar-background-color: rgba(0, 0, 0, 0.95);
+  --ifm-navbar-background-color: rgba(0, 0, 0, 1);
   --ifm-footer-background-color: #222;
   --ifm-color-primary-darkest: rgba(60, 60, 60, 1);
   --ifm-color-primary-darker: rgba(80, 80, 80, 1);
@@ -66,17 +88,121 @@ html[data-theme='light'] .navbar .navbar__logo {
 
 html[data-theme="dark"] {
   --ifm-background-color: #000;
-  --ifm-code-background: #222222;
+  --ifm-code-background: rgb(20,20,20);
 }
 
 html[data-theme="dark"] .navbar-sidebar {
   background: #000;
 }
 
-/* .mainWrapper_z2l0 {
-  padding-left: 10px;
-  padding-right: 10px
+
+
+/* CODE BLOCK (Single word) */
+
+code {
+    color: rgb(171, 178, 191);
+    background-color: var(--ifm-code-background);
+    border: 1px solid #333;
+    border-radius: var(--ifm-code-border-radius);
+    font-family: var(--ifm-font-family-monospace);
+    font-size: var(--ifm-code-font-size);
+    padding: 0.1rem 0.25rem;
+}
+
+
+
+/* CODE BLOCK (Code) */
+
+.markdown :where(pre):not(:where([class~=not-prose],[class~=not-prose] *)) {
+  background-color: #111 !important;
+/*   border: 1px solid #333; */
+}
+
+
+
+/* CODE BLOCK (Code title) */
+/* Border */
+/* .buttonGroup__atx button {
+    border: 1px solid #333;
 } */
+
+/* Background color (title) */
+.buttonGroup__atx button, .codeBlockContainer_Ckt0 {
+    background: #000 !important;
+    color: #333;
+    border: 1px solid #333 !important;
+}
+
+/* Border bottom */
+.codeBlockTitle_Ktv7 {
+    border-bottom: 1px solid #333 !important;
+}
+
+
+
+/* MAIN CONTAINER */
+
+/* Width */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.container {
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Margin */
+.margin-top--lg, .margin-vert--lg {
+    margin-top: 1.5rem !important;
+}
+
+
+
+
+/* MAIN WRAPPER */
+
+@media (min-width: 1416px) {
+    .main-wrapper {
+        align-self: center;
+        max-width: 1500px;
+        width: 1500px;
+    }
+}
+
+/* Width */
+.mainWrapper_z2l0 {
+    margin: 0 auto;
+    width: 98%;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+
+
+/* ARTICLE */
+
+/* Width */
+article {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 1.5rem padding */
+.padding-top--md, .padding-vert--md {
+    padding-top: 1.5rem !important;
+}
+
+/* h1 */
+h1 {
+  line-height: 1.1;
+/*   font-size: 2.75rem !important; */
+}
+
 
 
 /* NAVBAR */
@@ -87,30 +213,91 @@ html[data-theme="dark"] .navbar-sidebar {
 }
 
 /* Glassmorphism */
-nav.navbar:not(.navbar-sidebar--show) {
+/* nav.navbar:not(.navbar-sidebar--show) {
     --tw-backdrop-blur: blur(10px);
     -webkit-backdrop-filter: var(--tw-backdrop-blur);
     backdrop-filter: var(--tw-backdrop-blur);
-    background-color: rgb(0, 0, 0, 0.4);
-}
+    background-color: rgb(0, 0, 0, 0.75);
+} */
 
 /* Width */
-/* .navbar__inner {
+.navbar__inner {
     margin: 0 auto;
-    max-width: 1420px;
-    padding: 0 16px;
+    max-width: 1460px;
+}
+
+/* Title logo */
+.text--truncate {
+  font-size: 0;
+  font-family: 'VCR OSD Mono';
+  text-transform: uppercase;
+  font-weight: var(--ifm-font-weight-normal) !important;
+}
+
+.text--truncate::after {
+  font-size: 1.75rem;
+  content: "/ WRITE-UPS ►"
+}
+
+.text--truncate:hover::after {
+  content: "/ WR173-U95 ►"
+}
+
+
+
+/* NAVBAR DROPDOWN */
+
+/* Dropdown Glassmorphism */
+/* .dropdown {
+    width: auto;
+    --tw-backdrop-blur: blur(10px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur);
+    backdrop-filter: var(--tw-backdrop-blur);
+    background-color: rgb(0, 0, 0, 0.0);
 } */
+
+/* Dropdown list Glassmorphism */
+/* .dropdown__menu {
+    --tw-backdrop-blur: blur(10px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur);
+    backdrop-filter: var(--tw-backdrop-blur);
+    background-color: rgb(0, 0, 0, 0.75);
+} */
+
+/* Border and Margin */
+.dropdown__menu {
+    background-color: rgb(0, 0, 0, 1);
+    border-radius: 0.25rem;
+    border: 1px solid #333;
+}
+
+.menu, .navbar__link {
+  font-weight: var(--ifm-font-weight-normal);
+}
+
+
+
+/* NAVBAR SIDEBAR */
+.navbar-sidebar--show .navbar-sidebar, .navbar-sidebar--show .navbar-sidebar__backdrop {
+    opacity: 1;
+    visibility: visible;
+    border-right: 1px solid #333;
+}
 
 
 
 /* SIDEBAR */
+
+.menu__link {
+    line-height: 1.5;
+}
 
 aside.docSidebarContainer_YfHR {
     border-right: 0px;
 }
 
 nav.menu_SIkG {
-  padding: 1.5rem 1.5rem 1.5rem 1rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
 .token-line {
@@ -118,18 +305,46 @@ nav.menu_SIkG {
 }
 
 .menu__list-item {
-/*   margin-top: 0.25rem; */
   font-size: 0.9rem;
 }
 
-/* Left border on menu list */
+/* Left border, Left padding on menu list */
 .theme-doc-sidebar-menu.theme-doc-sidebar-menu .theme-doc-sidebar-item-category ul.menu__list {
     border-left: 1px solid #333;
     font-weight: 400;
     margin-bottom: 0;
     margin-left: 0.75rem;
     margin-top: 0.25rem;
+    padding-left: 0.25rem;
 }
+
+/* Left padding, Left border */
+.menu__list .menu__list {
+    border-left: 1px solid #333;
+    flex: 0 0 100%;
+    margin-top: 0.25rem;
+    padding-left: 0.25rem;
+    margin-left: 0.75rem;
+    font-weight: var(--ifm-font-weight-normal) !important;
+}
+
+/* Selected item border radius */
+/* .menu__caret, .menu__link, .menu__list-item-collapsible {
+    border-radius: 0.25rem;
+} */
+
+/* Background color (selected directory) */
+/* .menu__caret:hover, .menu__link:hover, .menu__list-item-collapsible--active, .menu__list-item-collapsible:hover {
+    background: #222;
+} */
+
+/* Background color, left-padding, left-margin, left-border (selected page) */
+/* .menu__link--active:not(.menu__link--sublist) {
+    background-color: #222;
+    border-left: 1px solid #999;
+    margin-left: -0.4rem;
+    padding-left: 0.8rem;
+} */
 
 /* Mobile version */
 .navbar-sidebar__item {
@@ -157,11 +372,30 @@ nav.menu_SIkG {
 
 
 
-/* IN PAGE ITEMS */
+/* TABLE OF CONTENTS */
 
 /* Left border */
 .table-of-contents__left-border {
     border-left: 1px solid #333333;
+}
+
+/* Padding left */
+.col--3 {
+    padding-left: 0;
+}
+
+/* Display none (mobile version) */
+.tocCollapsible_ETCw {
+    display: none;
+}
+
+.tableOfContents_bqdL {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + 1.5rem) !important;
+}
+
+.table-of-contents {
+  font-size: 0.85rem;
 }
 
 
@@ -206,63 +440,97 @@ table thead tr {
     border-bottom: 2px solid #333333;
 }
 
+/* Head */
+table thead {
+    background-color: rgb(20,20,20);
+}
+
+/* 2n child background */
+table tr:nth-child(2n) {
+    background-color: #000;
+}
 
 
-/* DOCS */
 
-/* Width */
-.mainWrapper_z2l0 {
-    margin: 0 auto;
-    width: 98%;
-    display: flex;
-    flex: 1 0 auto;
+/* DOCSEARCH */
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: #111111f0;
+  /* Modal */
+  --docsearch-modal-background: #000;
+  --docsearch-modal-shadow: #000;
+  /* Search box */
+  --docsearch-searchbox-background: #111;
+  --docsearch-searchbox-focus-background: #111;
+  --docsearch-searchbox-shadow: inset 0 0 0 2px #333;
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: #fff;
+  --docsearch-hit-background: #000;
+  /* Footer */
+  --docsearch-footer-background: #000;
+  --docsearch-footer-shadow: 0 1px 0 0 #333;
+  --docsearch-key-gradient: #111;
+  --docsearch-key-shadow: inset 0 0 0 1px #333;
+}
+
+
+/* SEARCH MODAL */
+.DocSearch-Modal {
+    background: var(--docsearch-modal-background);
+    border-radius: 6px;
+    /* box-shadow: var(--docsearch-modal-shadow); */
     flex-direction: column;
+    margin: 60px auto auto;
+    max-width: var(--docsearch-modal-width);
+    position: relative;
+    border: 1px solid #333;
+}
+
+
+/* SEARCH BAR */
+.DocSearch .DocSearch-Button {
+/*     border: 2px solid #333; */
+    border-radius: 4px;
+}
+
+/* Search option (selected) */
+.DocSearch-Hit[aria-selected=true] a {
+    background-color: #111 !important;
+/*     border: 1px solid #333 !important; */
+}
+
+/* Logo (SEARCH FOOTER) */
+.DocSearch-Logo svg {
+/*     display: none; */
+    filter: grayscale(1) !important;
 }
 
 
 
-/* ARTICLE */
+/* SEARCH PAGE */
 
-/* Width */
-article {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+/* Search bar color */
+html[data-theme=dark] {
+  --docsearch-searchbox-focus-background: #111 !important;
 }
 
-/* 1.5rem padding */
-.padding-top--md, .padding-vert--md {
-    padding-top: 1.5rem !important;
-}
-
-
-
-/* DROPDOWN */
-
-/* Dropdown Glassmorphism */
-/* .dropdown {
-    width: auto;
-    --tw-backdrop-blur: blur(10px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur);
-    backdrop-filter: var(--tw-backdrop-blur);
-    background-color: rgb(0, 0, 0, 0.0);
-} */
-
-/* Dropdown list Glassmorphism */
-.dropdown__menu {
-    --tw-backdrop-blur: blur(10px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur);
-    backdrop-filter: var(--tw-backdrop-blur);
-    background-color: rgb(0, 0, 0, 0.4);
+/* Logo (SEARCH PAGE) */
+.algoliaLogo_rT1R {
+    max-width: 150px;
+    filter: grayscale(1) !important;
 }
 
 
 
-/* MAIN CONATAINER */
+/* TAGS page */
 
-/* Width */
-@media (min-width: 1440px) {
-    .container {
-        max-width: 100%;
-    }
+.col--offset-2 {
+    margin-left: 20%;
+}
+
+.col--8 {
+    --ifm-col-width: 60%;
 }
