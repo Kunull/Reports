@@ -23,8 +23,8 @@
   --ifm-toc-padding-vertical: 0.8rem;
   --ifm-menu-link-padding-horizontal: 0.6rem;
   --ifm-menu-link-padding-vertical: 0.5rem;
-/*   --ifm-font-family-base: 'Input Sans';
-  --ifm-font-family-monospace: 'JetBrains Mono'; */
+  --ifm-font-family-base: 'Input Sans';
+  --ifm-font-family-monospace: 'JetBrains Mono';
   --ifm-global-radius: 0.25rem;
   --ifm-code-border-radius: var(--ifm-global-radius);
   --ifm-font-weight-light: 300;
