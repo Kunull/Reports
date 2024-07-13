@@ -7,7 +7,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-Includes reports concerning bug bounty and CVE research.
+This is a collection of reports for CVE research, bug bounty and vulnerability disclosure.
 
 :::note
 All findings are responsibly disclosed to concerning bodies. If you have any queries, send me an [email](mailto:llunuk@protonmail.com.com).
