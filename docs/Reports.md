@@ -9,8 +9,12 @@ pagination_prev: null
 
 This is a collection of reports for CVE research, bug bounty and vulnerability disclosure.
 
+All identified vulnerabilities are disclosed responsibly to the relevant organizations or vendors. 
+This involves notifying them with detailed information, allowing time for them to develop and release a fix before the vulnerability details are made public. 
+This process helps ensure that security issues are addressed properly and reduces the risk of exploitation by malicious actors.
+
 :::note
-All findings are responsibly disclosed to concerning bodies. If you have any queries, send me an [email](mailto:llunuk@protonmail.com.com).
+If you are the vendor of any software listed here and want to contact me, send me an [email](mailto:llunuk@protonmail.com.com).
 :::
 
 ## Disclosure accounts
