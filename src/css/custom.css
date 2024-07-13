@@ -236,11 +236,11 @@ h1 {
 
 .text--truncate::after {
   font-size: 1.75rem;
-  content: "/ WRITE-UPS ►"
+  content: "/ REPORTS ►"
 }
 
 .text--truncate:hover::after {
-  content: "/ WR173-U95 ►"
+  content: "/ R390R75 ►"
 }
 
 
