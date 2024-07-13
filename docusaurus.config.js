@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CVE Reports',
+  title: 'Reports',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/null_medium.png',
 
@@ -22,8 +22,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Knign', // Usually your GitHub org/user name.
-  projectName: 'CVE-Reports', // Usually your repo name.
+  organizationName: 'Kunull', // Usually your GitHub org/user name.
+  projectName: 'Reports', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
@@ -66,48 +66,75 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'CVE Reports | KuNull',
+        title: 'Writeups',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/null_medium.png',
+          src: 'img/0_medium.png',
         },
+
         items: [
           {
             type: 'dropdown',
-            label: 'Other Collections',
+            label: 'Disclosure accounts',
+            position: 'right',
+            items: [
+              {
+                label: 'VulDB',
+                href: 'https://vuldb.com/?user.61233',
+              },
+            ],
+          },
+
+          {
+            type: 'dropdown',
+            label: 'Other sites',
             position: 'right',
             items: [
               {
                 label: 'Blog',
                 href: 'https://blog-kunull.vercel.app',
               },
-              // ... more items
+              {
+                label: 'Writeups',
+                href: 'https://writeups-kunull.vercel.app',
+              },
+              {
+                label: 'Main site',
+                href: 'https://kunalwalavalkar.vercel.app',
+              },
             ],
           },
-          // {
-          //     href: 'https://kunalwalavalkarblog.vercel.app',
-          //     label: 'Blog',
-          //     position: 'right',
-          // },         
+
           {
-              href: 'https://kunalwalavalkar.vercel.app',
-              label: 'Main site',
-              position: 'right',
+            type: 'dropdown',
+            label: 'Socials',
+            position: 'right',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/kunull',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/kunalwalavalkar/',
+              },  
+            ],
           },
-          
+
           {
-              href: 'https://github.com/kunull',
-              label: 'GitHub',
-              position: 'right',
-          },
-          
-          {
-              href: 'https://www.linkedin.com/in/kunalwalavalkar/',
-              label: 'LinkedIn',
-              position: 'right',
-          },  
+            type: 'dropdown',
+            label: 'Contact',
+            position: 'right',
+            items: [
+              {
+                label: 'Email',
+                href: 'mailto:llunuk@protonmail.com',
+              },
+            ],
+          }, 
         ],
       },
+      
       // footer: {
       //   style: 'light',
       //   links: [
