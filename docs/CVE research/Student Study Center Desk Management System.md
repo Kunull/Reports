@@ -1,6 +1,6 @@
 ---
 slug: student-study-center-desk-management-system-save_student
-Title: Student Study Center Desk Management System (save_student.php)
+title: Student Study Center Desk Management System (Master.php?f=save_student)
 ---
 
 ## Details
