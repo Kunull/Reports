@@ -1,6 +1,6 @@
 ---
 slug: sourcecodester-advocate-management-system-add-act
-title: Sourcecodester advocate management system (add_act.php)
+title: CVE-2024-6729
 ---
 
 ## Details
