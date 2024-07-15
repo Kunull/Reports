@@ -1,0 +1,40 @@
+---
+slug: student-study-center-desk-management-system-xss-firstname
+title: Student Study Center Desk Management System XSS (firstname)
+---
+
+
+## Details
+
+### Related Code file: 
+`/sscdms/classes/Users.php?f=save`
+
+### XSS injection parameter: 
+`firstname`
+
+
+&nbsp;
+
+## POC
+
+![1](https://github.com/user-attachments/assets/48dd3fa1-9a3f-4b9e-9b04-04c18fd0b889)
+
+Click on `Create New`.
+
+![2](https://github.com/user-attachments/assets/04fec243-4950-4b8f-940e-2561cf3ed11f)
+
+Intercept the request using Burpsuite Proxy.
+
+![3](https://github.com/user-attachments/assets/1263ffa9-0ae0-4e5c-83c3-b963cf70a4c0)
+
+Change the `firstname` parameter to the following:
+
+```
+<script>print()</script>
+```
+
+![4](https://github.com/user-attachments/assets/d6333925-f395-4943-b4ff-debf0a030e22)
+
+Send the request and reload the page.
+
+![5](https://github.com/user-attachments/assets/f87e3382-690b-45ca-8986-4d44f50c3195)
