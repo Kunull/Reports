@@ -6,7 +6,7 @@ title: Computer Laboratory Management System (save_record)
 ## Details
 
 ### Related Code file: 
-`/lms/classes/Master.php?f=save_record
+`/lms/classes/Master.php?f=save_record`
 
 ## Injection parameter: 
 `MULTIPART id`
