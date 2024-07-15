@@ -1,6 +1,6 @@
 ---
 slug: computer-laboratory-management-system-save_record
-title: Computer Laboratory Management System (/lms/classes/Master.php?f=save_record)
+title: Computer Laboratory Management System (save_record)
 ---
 
 ## Details
