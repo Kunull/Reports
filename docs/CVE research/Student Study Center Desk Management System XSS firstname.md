@@ -30,7 +30,7 @@ Intercept the request using Burpsuite Proxy.
 Change the `firstname` parameter to the following:
 
 ```
-<script>print()</script>
+<script>print();</script>
 ```
 
 ![4](https://github.com/user-attachments/assets/d6333925-f395-4943-b4ff-debf0a030e22)
