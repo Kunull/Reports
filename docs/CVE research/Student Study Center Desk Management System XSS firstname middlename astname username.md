@@ -1,6 +1,6 @@
 ---
-slug: student-study-center-desk-management-system-xss-firstname
-title: Student Study Center Desk Management System XSS (firstname)
+slug: student-study-center-desk-management-system-xss-firstname-middlename-lastname-username
+title: Student Study Center Desk Management System XSS (firstname/midllename/lastname/username)
 ---
 
 
@@ -10,7 +10,7 @@ title: Student Study Center Desk Management System XSS (firstname)
 `/sscdms/classes/Users.php?f=save`
 
 ### XSS injection parameter: 
-`firstname`
+`firstname`, `middlename`, `lastname`, `username`
 
 
 &nbsp;
