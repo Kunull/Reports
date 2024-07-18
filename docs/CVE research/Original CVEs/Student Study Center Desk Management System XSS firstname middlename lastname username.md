@@ -1,6 +1,6 @@
 ---
 slug: student-study-center-desk-management-system-xss-firstname-middlename-lastname-username
-title: Student Study Center Desk Management System XSS (firstname/midllename/lastname/username)
+title: CVE-2024-6807
 ---
 
 
