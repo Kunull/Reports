@@ -186,8 +186,20 @@ const config = {
       prism: {
          theme: prismThemes.oneDark,
       },
-
-      
+      algolia: {
+          // The application ID provided by Algolia
+        appId: 'U8PJZMJE14',
+          // Public API key: it is safe to commit it
+        apiKey: '6172eeb915a8ca9a50425c0c229bfe78',
+        indexName: 'reports-kunull',
+        // contextualSearch: false,
+        typoTolerance: false,
+        maxResultsPerGroup: 9999,
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
     }),
   
 };
