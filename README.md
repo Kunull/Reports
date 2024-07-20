@@ -1,1 +1,1 @@
-Reports concerning CVE research, bug bounty, vulnerability disclosure.
+Reports for CVE research, bug bounty, vulnerability disclosure.
