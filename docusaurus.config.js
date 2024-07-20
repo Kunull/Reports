@@ -42,14 +42,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          "CVE research": [
-            {
-              type: 'category',
-              label: 'Docs',
-              collapsed: false,
-              items: ['markdown-features', 'sidebar', 'versioning'],
-            },
-            ],
           breadcrumbs: false,
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
