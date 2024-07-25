@@ -16,6 +16,6 @@ This involves notifying them with detailed information, allowing time for them t
 If you are the vendor of any software listed here and want to contact me, send me an [email](mailto:llunuk@protonmail.com.com).
 :::
 
-## Disclosure accounts
+## CNA accounts
 
 - [VulDB](https://vuldb.com/?user.61233)
