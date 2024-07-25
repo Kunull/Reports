@@ -75,7 +75,7 @@ const config = {
         items: [
           {
             type: 'dropdown',
-            label: 'Disclosure accounts',
+            label: 'CNA accounts',
             position: 'right',
             items: [
               {
