@@ -128,7 +128,7 @@ const config = {
             items: [
               {
                 label: 'Email',
-                href: 'mailto:llunuk@protonmail.com',
+                href: 'mailto:kunull.contact@protonmail.com',
               },
             ],
           }, 
