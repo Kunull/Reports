@@ -7,8 +7,6 @@ pagination_next: null
 pagination_prev: null
 ---
 
-> `<==>`
-
 This is a collection of reports for CVE research, bug bounty and vulnerability disclosure.
 
 All identified vulnerabilities are disclosed responsibly to the relevant organizations or vendors. 
