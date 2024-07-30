@@ -7,7 +7,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-> `<script>alert();</script>`
+> `<==>`
 
 This is a collection of reports for CVE research, bug bounty and vulnerability disclosure.
 
