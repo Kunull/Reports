@@ -45,6 +45,7 @@ const config = {
           breadcrumbs: false,
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
+          sidebarCollapsed: false,
         },
         blog: false,
         theme: {
