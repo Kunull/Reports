@@ -73,7 +73,7 @@ const config = {
           src: 'img/0_medium.png',
         },
 
-        // items: [
+        items: [
         //   {
         //     type: 'dropdown',
         //     label: 'CNA accounts',
