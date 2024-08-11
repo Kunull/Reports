@@ -73,18 +73,18 @@ const config = {
           src: 'img/0_medium.png',
         },
 
-        items: [
-          {
-            type: 'dropdown',
-            label: 'CNA accounts',
-            position: 'right',
-            items: [
-              {
-                label: 'VulDB',
-                href: 'https://vuldb.com/?user.61233',
-              },
-            ],
-          },
+        // items: [
+        //   {
+        //     type: 'dropdown',
+        //     label: 'CNA accounts',
+        //     position: 'right',
+        //     items: [
+        //       {
+        //         label: 'VulDB',
+        //         href: 'https://vuldb.com/?user.61233',
+        //       },
+        //     ],
+        //   },
 
           {
             type: 'dropdown',
