@@ -14,6 +14,8 @@ This involves notifying them with detailed information, allowing time for them t
 If you are the vendor of any software listed here and want to contact me, send me an [email](mailto:kunull.contact@protonmail.com.com).
 :::
 
+<!---
 ## CNA accounts
 
 - [VulDB](https://vuldb.com/?user.61233)
+-->
