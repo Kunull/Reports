@@ -3,8 +3,6 @@ slug: /
 title: Reports
 sidebar_position: 1
 custom_edit_url: null
-pagination_next: null
-pagination_prev: null
 ---
 
 This is a collection of reports for CVE research, bug bounty and vulnerability disclosure.
