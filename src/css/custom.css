@@ -214,6 +214,14 @@ h1 {
 
 
 
+/* PAGINATION */
+.pagination-nav {
+  display: none;
+}
+
+
+
+
 /* NAVBAR */
 
 /* Lower border */
