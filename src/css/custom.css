@@ -481,8 +481,8 @@ table tr:nth-child(2n) {
   --docsearch-modal-background: #000;
   --docsearch-modal-shadow: #000;
   /* Search box */
-  --docsearch-searchbox-background: rgb(10,10,10);
-  --docsearch-searchbox-focus-background: rgb(10,10,10);
+  --docsearch-searchbox-background: rgb(20,20,20);
+  --docsearch-searchbox-focus-background: rgb(20,20,20);
   --docsearch-searchbox-shadow: inset 0 0 0 2px #333;
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
@@ -510,7 +510,7 @@ table tr:nth-child(2n) {
 
 
 /* SEARCH BAR */
-.DocSearch .DocSearch-Button {
+.DocSearch-Button {
 /*     border: 2px solid #333; */
     border-radius: 0.25rem !important;
 }
