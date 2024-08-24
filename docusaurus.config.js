@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/0_medium.png',
 
   // Set the production url of your site here
-  url: 'https://reports-kunull.vercel.app/',
+  url: 'https://reports.kunull.net/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -93,15 +93,15 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://blog.kunull.net',
+                href: 'https://blog.kunull.net/',
               },
               {
                 label: 'Writeups',
-                href: 'https://writeups.kunull.net',
+                href: 'https://writeups.kunull.net/',
               },
               {
                 label: 'Main site',
-                href: 'https://kunull.net',
+                href: 'https://kunull.net/',
               },
             ],
           },
