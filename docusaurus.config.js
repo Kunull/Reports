@@ -93,15 +93,15 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://blog-kunull.vercel.app',
+                href: 'https://blog.kunull.net',
               },
               {
                 label: 'Writeups',
-                href: 'https://writeups-kunull.vercel.app',
+                href: 'https://writeups.kunull.net',
               },
               {
                 label: 'Main site',
-                href: 'https://kunull.vercel.app',
+                href: 'https://kunull.net',
               },
             ],
           },
@@ -129,7 +129,7 @@ const config = {
             items: [
               {
                 label: 'Email',
-                href: 'mailto:kunull.contact@protonmail.com',
+                href: 'mailto:contact@kunull.net',
               },
               {
                 label: 'Matrix',
