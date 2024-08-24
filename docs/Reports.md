@@ -11,7 +11,7 @@ All identified vulnerabilities are disclosed responsibly to the relevant organiz
 This involves notifying them with detailed information, allowing time for them to develop and release a fix before the vulnerability details are made public. 
 
 :::note
-If you are the vendor of any software listed here and want to contact me, send me an [email](mailto:kunull.contact@protonmail.com.com).
+If you are the vendor of any software listed here and want to contact me, send me an [email](mailto:contact@kunull.net).
 :::
 
 <!---
