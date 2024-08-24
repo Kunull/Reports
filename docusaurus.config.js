@@ -92,12 +92,12 @@ const config = {
             position: 'right',
             items: [
               {
-                label: 'Blog',
-                href: 'https://blog.kunull.net/',
-              },
-              {
                 label: 'Writeups',
                 href: 'https://writeups.kunull.net/',
+              },
+              {
+                label: 'Blog',
+                href: 'https://blog.kunull.net/',
               },
               {
                 label: 'Main site',
