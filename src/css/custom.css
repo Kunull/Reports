@@ -185,14 +185,14 @@ code {
     .main-wrapper {
         align-self: center;
         max-width: 1500px;
-        width: 1500px;
+/*         width: 1500px; */
     }
 }
 
 /* Width */
 .mainWrapper_z2l0 {
     margin: 0 auto;
-    width: 98%;
+/*     width: 98%; */
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
