@@ -257,11 +257,11 @@ h1 {
 
 .text--truncate::after {
   font-size: 1.75rem;
-  content: "/ REPORTS ►"
+  content: "/ RESEARCH ►"
 }
 
 .text--truncate:hover::after {
-  content: "/ R390R75 ►"
+  content: "/ R3534RCH ►"
 }
 
 

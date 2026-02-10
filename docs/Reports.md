@@ -1,11 +1,11 @@
 ---
 slug: /
-title: Reports
+title: Research
 sidebar_position: 1
 custom_edit_url: null
 ---
 
-This is a collection of reports for CVE research, bug bounty and vulnerability disclosure.
+This is a collection of CVE research, bug bounty and vulnerability disclosure.
 
 All identified vulnerabilities are disclosed responsibly to the relevant organizations or vendors. 
 This involves notifying them with detailed information, allowing time for them to develop and release a fix before the vulnerability details are made public. 

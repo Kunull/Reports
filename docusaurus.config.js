@@ -10,12 +10,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Reports',
+  title: 'Research',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/0_medium.png',
 
   // Set the production url of your site here
-  url: 'https://reports.kunull.net/',
+  url: 'https://research.kunull.net/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,7 +23,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Kunull', // Usually your GitHub org/user name.
-  projectName: 'Reports', // Usually your repo name.
+  projectName: 'Research', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
